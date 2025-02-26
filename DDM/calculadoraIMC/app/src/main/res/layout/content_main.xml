@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B50C0C"
+    android:orientation="vertical"
+    android:padding="30px"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50px"
+        android:text="Calcular IMC"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#3546A6" />
+
+    <EditText
+        android:id="@+id/Peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|text"
+        android:text="Digite seu peso"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#3F51B5" />
+
+    <EditText
+        android:id="@+id/Altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|textPersonName|text"
+        android:text="Digite sua altura"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#3F51B5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C11609">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:insetLeft="60dp"
+            android:insetRight="30dp"
+            android:text="Calcular"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="126dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
